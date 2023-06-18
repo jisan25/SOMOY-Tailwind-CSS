@@ -1,0 +1,22 @@
+{
+  "name": "somoy-tailwind-css",
+  "version": "1.0.0",
+  "description": "This is a landing page made with tailwind css.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [
+    "tailwindcss",
+    "html",
+    "css",
+    "js",
+    "frontend projects"
+  ],
+  "author": "shihabun mobin jisan",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

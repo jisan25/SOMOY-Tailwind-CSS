@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-hero-wrapper {
+  height: 600px;
+  max-width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(7, 42, 108)),
+    url("../img/somoy-hero-section.jpg");
+  background-position: center;
+  background-size: cover;
+}

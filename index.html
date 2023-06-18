@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>SOMOY || Tailwind CSS</title>
+  </head>
+  <body>
+    <!-- Navbar & Hero Wrapper -->
+    <div class="nav-hero-wrapper container mx-auto px-60 text-white">
+      <!-- Navbar -->
+      <div class="flex flex-row justify-between items-center py-5">
+        <!-- Logo -->
+        <div>
+          <h1 class="text-4xl font-semibold">SOMOY</h1>
+        </div>
+        <!-- Menu -->
+        <div>
+          <a
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#"
+            >Clients</a
+          >
+          <a
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#"
+            >Features</a
+          >
+          <a
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#"
+            >Product</a
+          >
+          <a
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#"
+            >Contact</a
+          >
+        </div>
+        <!-- Customer Care -->
+        <div class="flex flex-row items-center">
+          <div class="mr-3"><i class="fa-solid fa-headset text-xl"></i></div>
+          <div>
+            <p class="text-base ml-3">customer care</p>
+            <h4 class="text-xl">+880 1876 76 54 00</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Section -->
+      <div
+        class="flex justify-center items-center flex-col text-center h-[450px]"
+      >
+        <h2 class="text-7xl mb-4 uppercase font-semibold">
+          Somoy Landing Page
+        </h2>
+        <p class="text-xl px-64">
+          Time is a fundamental part of our existence. It is the measure of how
+          long something takes, and it is also the fourth dimension.
+        </p>
+        <!-- Button Container -->
+        <div class="py-7">
+          <button
+            class="bg-transparent hover:bg-floralWhite text-white border-solid border border-white hover:text-midnightBlue font-semibold py-2 px-4 rounded mx-3"
+          >
+            Subscribe
+          </button>
+          <button
+            class="bg-floralWhite text-midnightBlue font-semibold py-2 px-4 rounded mx-3 hover:bg-transparent hover:border-solid hover:border hover:border-white hover:text-white"
+          >
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Our Clients -->
+    <section class="pt-10 pb-10 container mx-auto px-60">
+      <!-- Client Heading -->
+      <h2
+        class="text-center text-4xl font-semibold text-midnightBlue mb-8 tracking-wide"
+      >
+        OUR CLIENTS
+      </h2>
+      <!-- Client Logos -->
+      <div class="grid grid-cols-5">
+        <img
+          src="img/clients/Apex-Company-Logo-min.jpg"
+          class="w-3/4 h-2/3 bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 cursor-pointer"
+        />
+        <img
+          src="img/clients/Rolex-Company-Logo-min.png"
+          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+        />
+        <img
+          src="img/clients/Cocacola-Client-Logo-min.jpg"
+          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+        />
+
+        <img
+          src="img/clients/Hp-Client-Logo-min.png"
+          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+        />
+
+        <img
+          src="img/clients/Toyota-Company-Logo-min.jpg"
+          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+        />
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="pb-10 mx-auto px-60">
+      <!-- Features Heading -->
+      <h2
+        class="text-center text-4xl font-semibold text-midnightBlue mb-5 tracking-wide uppercase"
+      >
+        Main Features
+      </h2>
+      <!-- Features Container -->
+      <div class="grid grid-cols-4 gap-x-5">
+        <!-- Feature 1 -->
+        <div class="text-center mt-5">
+          <div
+            class="w-16 h-16 bg-midnightBlue rounded-full flex justify-center items-center mx-auto"
+          >
+            <i class="fa-solid fa-hourglass-end text-2xl text-white"></i>
+          </div>
+          <h4 class="mt-3 mb-2 text-2xl font-normal">Subjectivity</h4>
+          <p class="text-base text-gray-600 text-center">
+            Our perception of time is subjective. This means that two people may
+            experience the same event as happening at different speeds.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+
+        <div class="text-center mt-5">
+          <div
+            class="w-16 h-16 bg-midnightBlue rounded-full flex justify-center items-center mx-auto"
+          >
+            <i class="fa-solid fa-clock-rotate-left text-2xl text-white"></i>
+          </div>
+          <h4 class="mt-3 mb-2 text-2xl font-normal">Irreversibility</h4>
+          <p class="text-base text-gray-600 text-center">
+            Time only flows in one direction, from the past to the present to
+            the future. This is why we can remember the past but not the future.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="text-center mt-5">
+          <div
+            class="w-16 h-16 bg-midnightBlue rounded-full flex justify-center items-center mx-auto"
+          >
+            <i class="fa-solid fa-stopwatch text-2xl text-white"></i>
+          </div>
+          <h4 class="mt-3 mb-2 text-2xl font-normal">Sequentiality</h4>
+          <p class="text-base text-gray-600 text-center">
+            Events in time happen one after the other. This is why we can say
+            that one event happened before or after another event.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="text-center mt-5">
+          <div
+            class="w-16 h-16 bg-midnightBlue rounded-full flex justify-center items-center mx-auto"
+          >
+            <i class="fa-solid fa-calendar-days text-2xl text-white"></i>
+          </div>
+          <h4 class="mt-3 mb-2 text-2xl font-normal">Duration</h4>
+          <p class="text-base text-gray-600 text-center">
+            Events in time take a certain amount of time to happen. This is why
+            we can say that one event lasted longer or shorter than another
+            event.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section -->
+    <section class="pb-10 mx-auto px-60">
+      <!-- Product Heading -->
+      <h2
+        class="text-center text-4xl font-semibold text-midnightBlue mb-8 tracking-wide uppercase"
+      >
+        Main Product
+      </h2>
+      <!-- Product Container -->
+      <div class="grid grid-cols-2 gap-x-7 mt-5">
+        <!-- Product Image -->
+        <div>
+          <img
+            src="img/main_product/somoy-traveller-main-product.jpg"
+            class="max-w-lg border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          />
+        </div>
+        <!-- Product Text -->
+
+        <div class="flex flex-col justify-center">
+          <h2
+            class="text-3xl font-semibold text-darkGray uppercase mb-3 tracking-wide"
+          >
+            Somoy Traveler
+          </h2>
+          <p class="text-base text-gray-600 mb-7">
+            The Somoy Traveler is the perfect watch for the modern traveler.
+            With its sleek design and advanced features, the Somoy Traveler is
+            sure to turn heads wherever you go.
+          </p>
+          <button
+            href="#"
+            class="bg-forestGreen text-white font-semibold py-2 px-4 rounded hover:bg-midnightBlue hover:text-white w-48"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
