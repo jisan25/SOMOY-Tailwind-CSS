@@ -3,7 +3,7 @@
 **Live version:**
 
 | Serial| Title            |Details|   |   
-|-------|------------------|-----------|-
+|-------|------------------|-----------|
 | 1     | Start            | 18/6/2023 |  
 | 2     | End              | Not Finished Yet |  
 | 3     | Main Language    |Tailwind CSS |  
