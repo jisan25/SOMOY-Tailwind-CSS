@@ -13,7 +13,7 @@ module.exports = {
         midnightBlue: "#072a6c",
         forestGreen: "#04724d",
         floralWhite: "#fffcf2",
-        darkGray: "- rgb(51, 51, 51)",
+        darkGray: "rgb(51, 51, 51)",
       },
     },
   },

@@ -1,0 +1,6 @@
+Somoy Color Scheme
+------------------
+1. Primary Color (Blue) - #072a6c, rgb(7, 42, 108)
+2. Secondary Color (Green) - #04724d, rgb(4, 114, 77)
+3. Light Color - #fffcf2, rgb(255, 252, 242)
+4. Dark Color - rgb(51, 51, 51)

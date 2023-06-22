@@ -18,18 +18,40 @@
     <title>SOMOY || Tailwind CSS</title>
   </head>
   <body>
+    <!-- fullscreen mobile navigation overlay -->
+    <input type="checkbox" id="active" class="hidden" />
+    <label for="active" class="menu-btn md:hidden"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <div class="wrapper bg-midnightBlue opacity-90 md:hidden">
+      <!-- mobile menu -->
+      <ul class="menu">
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- Navbar & Hero Wrapper -->
-    <div class="nav-hero-wrapper container mx-auto px-60 text-white">
-      <!-- Navbar -->
+    <div
+      class="px-5 nav-hero-wrapper container mx-auto text-white md:px-20 md:text-center lg:px-60"
+    >
+      <!-- navbar container-->
       <div class="flex flex-row justify-between items-center py-5">
         <!-- Logo -->
         <div>
-          <h1 class="text-4xl font-semibold">SOMOY</h1>
+          <h1
+            class="text-2xl font-semibold md:font-normal md:tracking-wider lg:text-4xl"
+          >
+            SOMOY
+          </h1>
         </div>
         <!-- Menu -->
-        <div>
+        <div class="hidden md:block">
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2 md:hidden"
             href="#"
             >Clients</a
           >
@@ -55,7 +77,7 @@
           >
         </div>
         <!-- Customer Care -->
-        <div class="flex flex-row items-center">
+        <div class="hidden lg:flex lg:flex-row items-center">
           <div class="mr-3"><i class="fa-solid fa-headset text-xl"></i></div>
           <div>
             <p class="text-base ml-3">customer care</p>
@@ -65,12 +87,14 @@
       </div>
       <!-- Hero Section -->
       <div
-        class="flex justify-center items-center flex-col text-center h-[450px]"
+        class="py-10 flex justify-center items-center flex-col text-center h-auto lg:h-[450px] md:py-14"
       >
-        <h2 class="text-7xl mb-4 uppercase font-semibold">
+        <h2
+          class="text-4xl mb-4 uppercase font-semibold md:text-6xl lg:text-7xl"
+        >
           Somoy Landing Page
         </h2>
-        <p class="text-xl px-64">
+        <p class="text-base md:text-xl px-10 md:px-24 lg:px-64">
           Time is a fundamental part of our existence. It is the measure of how
           long something takes, and it is also the fourth dimension.
         </p>
@@ -90,41 +114,41 @@
       </div>
     </div>
     <!-- Our Clients -->
-    <section class="pt-10 pb-10 container mx-auto px-60">
+    <section class="px-5 pt-10 pb-10 container mx-auto md:px-20 lg:px-60">
       <!-- Client Heading -->
       <h2
         class="text-center text-4xl font-semibold text-midnightBlue mb-8 tracking-wide"
       >
         OUR CLIENTS
       </h2>
-      <!-- Client Logos -->
-      <div class="grid grid-cols-5">
+      <!-- container client logos -->
+      <div class="grid grid-cols-2 gap-x-3 gap-y-2 lg:grid-cols-5">
         <img
           src="img/clients/Apex-Company-Logo-min.jpg"
-          class="w-3/4 h-2/3 bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 cursor-pointer"
+          class="w-[95%] h-[90%] bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 cursor-pointer lg:w-3/4 lg:h-2/3"
         />
         <img
           src="img/clients/Rolex-Company-Logo-min.png"
-          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+          class="w-[95%] h-[90%] cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 lg:w-3/4 lg:h-2/3"
         />
         <img
           src="img/clients/Cocacola-Client-Logo-min.jpg"
-          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+          class="w-[95%] h-[75%] cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 lg:w-3/4 lg:h-2/3"
         />
 
         <img
           src="img/clients/Hp-Client-Logo-min.png"
-          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+          class="w-[95%] h-[75%] cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 lg:w-3/4 lg:h-2/3"
         />
 
         <img
           src="img/clients/Toyota-Company-Logo-min.jpg"
-          class="w-3/4 h-2/3 cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300"
+          class="-mt-4 w-[95%] h-[90%] cursor-pointer object-cover bg-white border border-gray-200 rounded-lg shadow hover:border-gray-300 lg:w-3/4 lg:h-2/3"
         />
       </div>
     </section>
     <!-- Features Section -->
-    <section class="pb-10 mx-auto px-60">
+    <section class="px-5 pb-10 mx-auto md:px-20 md:text-center lg:px-60">
       <!-- Features Heading -->
       <h2
         class="text-center text-4xl font-semibold text-midnightBlue mb-5 tracking-wide uppercase"
@@ -132,7 +156,9 @@
         Main Features
       </h2>
       <!-- Features Container -->
-      <div class="grid grid-cols-4 gap-x-5">
+      <div
+        class="grid gap-x-5 md:grid-cols-2 gap-y-1 md:gap-y-6 lg:grid-cols-4"
+      >
         <!-- Feature 1 -->
         <div class="text-center mt-5">
           <div
@@ -190,7 +216,9 @@
       </div>
     </section>
     <!-- Product Section -->
-    <section class="pb-10 mx-auto px-60">
+    <section
+      class="pb-10 mx-auto px-5 md:px-32 text-center lg:px-60 lg:text-left"
+    >
       <!-- Product Heading -->
       <h2
         class="text-center text-4xl font-semibold text-midnightBlue mb-8 tracking-wide uppercase"
@@ -198,12 +226,12 @@
         Main Product
       </h2>
       <!-- Product Container -->
-      <div class="grid grid-cols-2 gap-x-7 mt-5">
+      <div class="grid gap-x-7 mt-5 md:grid-cols-1 gap-y-7 lg:grid-cols-2">
         <!-- Product Image -->
-        <div>
+        <div class="px-3 md:px-0">
           <img
             src="img/main_product/somoy-traveller-main-product.jpg"
-            class="max-w-lg border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="lg:max-w-lg border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           />
         </div>
         <!-- Product Text -->
@@ -214,18 +242,86 @@
           >
             Somoy Traveler
           </h2>
-          <p class="text-base text-gray-600 mb-7">
+          <p class="text-base text-gray-600 mb-7 px-5 lg:px-0">
             The Somoy Traveler is the perfect watch for the modern traveler.
             With its sleek design and advanced features, the Somoy Traveler is
             sure to turn heads wherever you go.
           </p>
           <button
             href="#"
-            class="bg-forestGreen text-white font-semibold py-2 px-4 rounded hover:bg-midnightBlue hover:text-white w-48"
+            class="bg-forestGreen text-white font-semibold py-2 px-4 rounded hover:bg-midnightBlue hover:text-white w-48 mx-auto lg:mx-0"
           >
             Learn More
           </button>
         </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="pt-1 pb-5 md:pb-10">
+      <!-- About Grid Container -->
+      <div class="grid lg:grid-cols-2">
+        <!-- About Somoy Team Image -->
+        <img src="img/About Us__Somoy-min.jpg" />
+        <!-- About Text Column -->
+        <div
+          class="bg-midnightBlue text-floralWhite px-10 h-full justify-center flex flex-col py-10 lg:py-0 text-center lg:text-left"
+        >
+          <h4 class="font-semibold text-2xl uppercase tracking-wide mb-4">
+            About SOMOY
+          </h4>
+          <p class="mb-4 text-gray-300">
+            We are a small team of five members. We are working day and night to
+            serve our customers. Now, we are available at 24/7. We have 24 shops
+            all across the country. You can find any kind of watches in our
+            shops. We recieved our payment via online or cash. It's a very easy
+            process.
+          </p>
+          <!-- Our Qualities -->
+          <div class="flex flex-col">
+            <a class="mb-1 text-lg" href="#"
+              ><i class="fas fa-check mr-2"></i> We are unique.</a
+            >
+            <a class="mb-1 text-lg" href="#"
+              ><i class="fas fa-check mr-2"></i> Special Customer Services.</a
+            >
+            <a class="mb-1 text-lg" href="#"
+              ><i class="fas fa-check mr-2"></i> 7 Years of Experience.</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+      class="px-5 pt-1 mx-auto text-center lg:text-left lg:px-60 md:px-32"
+    >
+      <!-- Cotact Grid Container -->
+      <div class="grid lg:grid-cols-2 gap-y-7">
+        <!-- Contact Text Container -->
+        <div
+          class="flex flex-col justify-center order-2 lg:order-1 mb-10 lg:mb-0 md:pr-16"
+        >
+          <h4 class="uppercase font-normal text-4xl mb-5">Need Support ?</h4>
+          <p class="text-gray-600 mb-8">
+            If you need support, there are many resources available to you. You
+            can reach out to friends, family, or professional organizations. You
+            can also find support online or through hotlines.There are many
+            different types of support available, including, Financial,
+            Emotional, Practical & Social Support.
+          </p>
+          <!-- Contact Button -->
+          <button
+            href="#"
+            class="bg-midnightBlue text-white font-semibold py-2 px-4 rounded hover:bg-forestGreen hover:text-white w-48 mx-auto lg:mx-0"
+          >
+            Contact
+          </button>
+        </div>
+        <!-- Helpcenter Image -->
+        <img
+          src="img/Call_Center__SOMOY.jpg"
+          class="order-1 md:mb-10 lg:order-2"
+        />
       </div>
     </section>
   </body>
