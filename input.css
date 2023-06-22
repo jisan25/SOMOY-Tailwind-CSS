@@ -58,12 +58,12 @@
   text-align: center;
 }
 .wrapper ul li {
-  margin: 12px 0;
+  margin: 9px 0;
 }
 .wrapper ul li a {
   color: floralwhite;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   padding: 0px 50px;
   position: relative;
