@@ -21,11 +21,11 @@ html {
 
 .wrapper {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   height: 100%;
   width: 100%;
-  clip-path: circle(25px at calc(100% - 45px) 45px);
+  clip-path: circle(25px at calc(100% - 45px) 37px);
   transition: all 0.3s ease-in-out;
   z-index: 4;
   /* display: none; */
@@ -36,7 +36,7 @@ html {
 .menu-btn {
   position: fixed;
   right: 20px;
-  top: 20px;
+  top: 12px;
   z-index: 5;
   text-align: center;
   line-height: 50px;
@@ -165,13 +165,6 @@ html {
 
 /* End Fixed Navbar */
 
-/* Mobile Responsive Design */
-@media (max-width: 480px) {
-  .nav-hero-wrapper {
-    height: auto;
-  }
-}
-
 /* Tablet Responsive Design */
 @media (max-width: 768px) {
   .nav-hero-wrapper {
@@ -179,5 +172,15 @@ html {
   }
   .fixed-nav {
     padding: 20px 80px;
+  }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+  .nav-hero-wrapper {
+    height: auto;
+  }
+  .fixed-nav {
+    padding: 20px 20px;
   }
 }
