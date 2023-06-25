@@ -25,59 +25,60 @@
     ></label>
     <div class="wrapper bg-midnightBlue opacity-90 md:hidden">
       <!-- mobile menu -->
-      <ul class="menu">
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="menu" id="mobile-menu-wrapper">
+        <li><a class="scroll-link" href="#clients">Clients</a></li>
+        <li><a class="scroll-link" href="#features">Features</a></li>
+        <li><a class="scroll-link" href="#product">Product</a></li>
+        <li><a class="scroll-link" href="#about">About</a></li>
+        <li><a class="scroll-link" href="#contact">Contact</a></li>
       </ul>
     </div>
 
     <!-- Navbar & Hero Wrapper -->
     <div
+      id="home"
       class="px-5 nav-hero-wrapper container mx-auto text-white md:px-20 md:text-center lg:px-60"
     >
       <!-- navbar container-->
-      <div class="flex flex-row justify-between items-center py-5">
+      <div class="flex flex-row justify-between items-center py-5" id="nav">
         <!-- Logo -->
         <div>
           <h1
             class="text-2xl font-semibold md:font-normal md:tracking-wider lg:text-4xl"
           >
-            SOMOY
+            <a href="#home">SOMOY</a>
           </h1>
         </div>
         <!-- Menu -->
-        <div class="hidden md:block">
+        <div class="hidden md:block links-container">
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2 md:hidden"
-            href="#"
+            class="scroll-link text-base mx-2 hover:border-b-2 hover:border-white pb-2 md:hidden"
+            href="#clients"
             >Clients</a
           >
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
-            href="#"
+            class="scroll-link text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#features"
             >Features</a
           >
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
-            href="#"
+            class="scroll-link text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#product"
             >Product</a
           >
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
-            href="#"
+            class="scroll-link text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#about"
             >About</a
           >
           <a
-            class="text-base mx-2 hover:border-b-2 hover:border-white pb-2"
-            href="#"
+            class="scroll-link text-base mx-2 hover:border-b-2 hover:border-white pb-2"
+            href="#contact"
             >Contact</a
           >
         </div>
         <!-- Customer Care -->
-        <div class="hidden lg:flex lg:flex-row items-center">
+        <div class="help-line hidden lg:flex lg:flex-row items-center">
           <div class="mr-3"><i class="fa-solid fa-headset text-xl"></i></div>
           <div>
             <p class="text-base ml-3">customer care</p>
@@ -114,7 +115,10 @@
       </div>
     </div>
     <!-- Our Clients -->
-    <section class="px-5 pt-10 pb-10 container mx-auto md:px-20 lg:px-60">
+    <section
+      class="px-5 pt-10 pb-10 container mx-auto md:px-20 lg:px-60"
+      id="clients"
+    >
       <!-- Client Heading -->
       <h2
         class="text-center text-4xl font-semibold text-midnightBlue mb-8 tracking-wide"
@@ -148,7 +152,10 @@
       </div>
     </section>
     <!-- Features Section -->
-    <section class="px-5 pb-10 mx-auto md:px-20 md:text-center lg:px-60">
+    <section
+      class="px-5 pb-10 mx-auto md:px-20 md:text-center lg:px-60"
+      id="features"
+    >
       <!-- Features Heading -->
       <h2
         class="text-center text-4xl font-semibold text-midnightBlue mb-5 tracking-wide uppercase"
@@ -218,6 +225,7 @@
     <!-- Product Section -->
     <section
       class="pb-10 mx-auto px-5 md:px-32 text-center lg:px-60 lg:text-left"
+      id="product"
     >
       <!-- Product Heading -->
       <h2
@@ -257,7 +265,7 @@
       </div>
     </section>
     <!-- About Section -->
-    <section class="pt-1 pb-5 md:pb-10">
+    <section class="pt-1 pb-5 md:pb-10" id="about">
       <!-- About Grid Container -->
       <div class="grid lg:grid-cols-2">
         <!-- About Somoy Team Image -->
@@ -294,6 +302,7 @@
     <!-- Contact Section -->
     <section
       class="px-5 pt-1 mx-auto text-center lg:text-left lg:px-60 md:px-32"
+      id="contact"
     >
       <!-- Cotact Grid Container -->
       <div class="grid lg:grid-cols-2 gap-y-7">
@@ -324,5 +333,9 @@
         />
       </div>
     </section>
+    <a href="#home" class="top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="js/script.js"></script>
   </body>
 </html>

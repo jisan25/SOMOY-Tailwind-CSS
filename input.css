@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add Background Image to Hero */
+
 .nav-hero-wrapper {
   height: 600px;
   max-width: 100vw;
@@ -10,6 +16,8 @@
   background-position: center;
   background-size: cover;
 }
+
+/* Mobile fullscreen overlay menu */
 
 .wrapper {
   position: fixed;
@@ -90,6 +98,73 @@
   color: #072a6c;
 }
 
+/* End Mobile fullscreen overlay menu */
+
+/* Go to Top */
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: #04724d;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  color: #fffcf2;
+  animation: bounce 2s ease-in-out infinite;
+
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* End Go to Top */
+
+/* Fixed Navbar */
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #fffcf2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 240px;
+}
+.fixed-nav h1 {
+  color: #072a6c;
+}
+.fixed-nav a {
+  color: #072a6c;
+}
+.fixed-nav a:hover {
+  color: #04724d;
+}
+.fixed-nav .help-line {
+  color: #04724d;
+}
+
+/* End Fixed Navbar */
+
 /* Mobile Responsive Design */
 @media (max-width: 480px) {
   .nav-hero-wrapper {
@@ -101,5 +176,8 @@
 @media (max-width: 768px) {
   .nav-hero-wrapper {
     height: auto;
+  }
+  .fixed-nav {
+    padding: 20px 80px;
   }
 }
